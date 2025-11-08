@@ -1,0 +1,162 @@
+.login-bg {
+    background: #f3f6fb;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-centered {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(99,120,166,0.07), 0 1.5px 4px #e3e5ed;
+    padding: 38px 34px;
+    width: 375px;
+    max-width: 95vw;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.login-logo {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.login-card-icon {
+    font-size: 36px;
+    color: #2253d5;
+    margin-bottom: 7px;
+    display: block;
+}
+
+.login-card-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #233377;
+    margin-bottom: 3px;
+    display: block;
+}
+
+.login-card-desc {
+    color: #4b607b;
+    font-size: 16px;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.login-form {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.login-form-title {
+    font-weight: 600;
+    margin-bottom: 18px;
+    color: #233377;
+    font-size: 16.5px;
+    text-align: center;
+}
+
+.login-label-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.login-label-input label {
+    font-size: 14px;
+    color: #3f3f3f;
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+
+.login-input {
+    padding: 9px 13px;
+    border: 1.3px solid #d9e3ea;
+    border-radius: 7px;
+    font-size: 15px;
+    background: #f8fafc;
+    color: #1a1a1a;
+    margin-bottom: 2px;
+    font-family: inherit;
+    transition: border 0.14s;
+}
+
+.login-input:focus {
+    border: 1.3px solid #3483fa;
+    outline: none;
+}
+
+.login-input::placeholder {
+    color: #888;
+    opacity: 1;
+}
+
+.login-form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 13px;
+    font-size: 13px;
+    color: #345;
+}
+
+.login-remember input[type=checkbox] {
+    margin-right: 4px;
+}
+
+.login-link {
+    color: #2253d5;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.login-btn {
+    background: #2253d5;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 0;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 11px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background 0.2s;
+}
+
+.login-btn:hover, .login-btn:active {
+    background: #1e409c;
+}
+
+.login-btn-bank {
+    background: #e3eaef !important;
+    color: #233377 !important;
+    margin-top: 8px;
+}
+
+.bank-icon {
+    margin-right: 5px;
+}
+
+.login-bottom-text {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-secure-text {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 11px;
+    color: #959dbb;
+}

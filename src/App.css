@@ -1,0 +1,74 @@
+body {
+  background: #f3f6fb;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+}
+
+.centered-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(99,120,166,0.07), 0 1.5px 4px #e3e5ed;
+  padding: 36px 32px;
+  width: 360px;
+  max-width: 91vw;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.label-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.label-input label {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.input {
+  padding: 8px 12px;
+  border: 1px solid #d9e3ea;
+  border-radius: 7px;
+  font-size: 15px;
+  background: #f8fafc;
+  color: #111;            /* Чёрный текст внутри поля */
+  transition: border 0.15s;
+}
+
+.input::placeholder {
+  color: #888;
+  opacity: 1;
+}
+
+.input:focus {
+  border: 1.5px solid #3483fa;
+  outline: none;
+}
+.button {
+  background: #2253d5;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 0;
+  font-weight: 600;
+  width: 100%;
+  margin-top: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background 0.2s;
+}
+.button:active, .button:hover {
+  background: #1e409c;
+}

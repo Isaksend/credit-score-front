@@ -1,0 +1,236 @@
+.dashboard-bg {
+    min-height: 100vh;
+    background: #f9fafc;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.dashboard-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 55px 0px 38px;
+    background: #fff;
+}
+
+.smart-credit-title {
+    font-size: 23px;
+    font-weight: 700;
+    color: #101826;
+}
+
+.for-retailers {
+    font-size: 14px;
+    font-weight: 400;
+    color: #60698a;
+    margin-left: 7px;
+}
+
+.dashboard-title {
+    color: #181818;
+    font-size: 29px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.dashboard-nav {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.dashboard-nav > div {
+    font-size: 15.2px;
+    padding: 7px 20px;
+    border-radius: 7.5px;
+    background: none;
+    cursor: pointer;
+    color: #191b2a;
+    font-weight: 500;
+    opacity: 0.87;
+    transition: background 0.13s;
+}
+
+.nav-active {
+    background: #101826;
+    color: #eee !important;
+}
+
+.circle-profile {
+    width: 30px;
+    height: 30px;
+    background: #eee;
+    border-radius: 50%;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16.2px;
+    margin-left: 25px;
+}
+
+.dashboard-content {
+    width: 99vw;
+    max-width: 95%;
+    margin: 30px auto 0;
+    padding: 0 32px;
+    font-size: 16px;
+}
+
+.dashboard-subtitle {
+    color: #60698a;
+    margin-bottom: 18px;
+}
+
+.dashboard-notification {
+    background: #fff;
+    border-radius: 11px;
+    padding: 16px 21px;
+    margin-bottom: 20px;
+    box-shadow: 0 .5px 2px rgba(30,50,110,0.059);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.dashboard-btn-small {
+    margin-left: 30px;
+    background: #f4f6fa;
+    border-radius: 7px;
+    border: 1px solid #e5e8ec;
+    color: #233375;
+    padding: 5px 13px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 13.7px;
+}
+
+.dashboard-link {
+    color: #2973eb !important;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.dashboard-stat-blocks {
+    display: flex;
+    gap: 19px;
+    margin-bottom: 23px;
+}
+
+.stat-card {
+    background: #fff;
+    border-radius: 9px;
+    flex: 1 1 0;
+    min-width: 160px;
+    box-shadow: 0 .5px 2.5px rgba(30,50,110,0.05);
+    padding: 25px 26px 19px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.stat-title {
+    color: #233377;
+    font-size: 14px;
+    margin-bottom: 7px;
+    font-weight: 400;
+}
+
+.stat-value {
+    font-size: 23.5px;
+    font-weight: bold;
+    color: #191b2a;
+}
+
+.dashboard-row {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 24px;
+}
+
+.block-lg, .block-md {
+    background: #fff;
+    border-radius: 12px;
+    padding: 27px 24px 23px;
+    flex: 1 1 0;
+    box-shadow: 0 .5px 2.5px rgba(30,50,110,0.06);
+}
+
+.block-md {
+    min-width: 0;
+}
+
+.block-title {
+    font-weight: 600;
+    font-size: 17px;
+    color: #233377;
+    margin-bottom: 13px;
+}
+
+.score-gauge-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 90px;
+    margin-right: 7px;
+}
+
+.score-gauge-num {
+    font-size: 39px;
+    font-weight: bold;
+    color: #21a37e;
+    margin-bottom: 2.5px;
+}
+
+.score-gauge-risk {
+    font-size: 16px;
+    font-weight: 500;
+    color: #199659;
+    margin-top: 4px;
+}
+
+.model-confidence {
+    font-size: 13.7px;
+    color: #395388;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.graph-label {
+    color: #8291b8;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 9px;
+}
+
+.risk-list {
+    color: #2e3b4d;
+    padding-left: 22px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.risk-list li {
+    margin-bottom: 2px;
+}
+
+@media (max-width: 1000px) {
+    .dashboard-row,
+    .dashboard-stat-blocks {
+        flex-direction: column;
+        gap: 13px;
+    }
+    .dashboard-header {
+        flex-direction: column;
+        gap: 18px;
+        align-items: flex-start;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .dashboard-content {
+        padding: 0 2px;
+    }
+}
