@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./LoginPage.css";
 
 const demoUsers = {
-    "admin@smartcredit.kz": "secret",
+    "MLfinance@corp.kz": "secret",
     "user@smartcredit.kz": "password"
 };
 
