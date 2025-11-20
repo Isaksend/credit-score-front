@@ -20,7 +20,7 @@ export default function LoginPage({ onLogin }) {
             setError("");
             // Редирект на dashboard:
             navigate("/dashboard");
-            // Успешный вход (например, вызвать onLogin или перейти на Dashboard)
+            // Успешный вход (например, вызвать onLogin или перейти на DashboardPage)
             if (onLogin) onLogin({ email });
         } else {
             setError("Incorrect email or password");

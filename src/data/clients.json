@@ -1,0 +1,6 @@
+[
+  { "id": "1", "name": "Ivan Petrov", "score": 620, "status": "New", "email": "ivan@example.com" },
+  { "id": "2", "name": "Anna Lee", "score": 480, "status": "Review", "email": "anna@example.com" },
+  { "id": "3", "name": "Olga Ivanova", "score": 720, "status": "Approved", "email": "olga@example.com" },
+  { "id": "4", "name": "Sergey Denisov", "score": 390, "status": "Rejected", "email": "sergey@example.com" }
+]
