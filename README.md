@@ -1,68 +1,50 @@
-Credit Score Frontend
-Credit Score Frontend is a user-friendly React application for managing clients in a credit scoring system, visualizing their statuses, applications, and profiles.
-The interface features a digital/dark theme, kanban board with drag & drop, persistent data storage, and authentication support.
+🚦 Credit Score Frontend
+Credit Score Frontend is a modern React application for visual credit scoring, client management, and UX analytics, designed with a sleek dark/digital style.
 
-🚀 Core Features
-CreditForm: Fill-out form to send client parameters for scoring, with live results display.
+✨ Features
+Credit Form — Submit client data to get instant credit scoring and risk analysis results.
+<img width="1905" height="943" alt="image" src="https://github.com/user-attachments/assets/4f1ebcf1-92bb-4b4e-89e8-99ddd8a8a396" />
 
-Profile: User profile page with Logout functionality and personal info.
 
-Clients Kanban board: Visual management of applicants by status (New, In Review, Approved, Rejected).
+Kanban Board — Track clients by status: New, Review, Approved, Rejected (with drag-and-drop).
+<img width="1898" height="946" alt="image" src="https://github.com/user-attachments/assets/a5466548-3389-4d75-b121-f3cd7a96b89f" />
 
-Add new clients (modal form)
 
-Drag & drop between statuses
+Add, Edit, Delete Clients — Manage clients on the fly with modal forms, persistent across refreshes.
 
-Persistent storage in JSON + localStorage (clients never disappear after page refresh!)
+Profile Page — View and edit user info, logout securely.
+<img width="1899" height="574" alt="image" src="https://github.com/user-attachments/assets/62b7e3b4-918a-4f30-b06c-38a22783d41a" />
 
-View, edit, and delete clients directly from the board
+Authentication — Navigate freely after login, clean auth flow.
 
-Navigation menu: Fixed and adaptive (hidden on the login page)
+Navigation Menu — Elegant, fixed navbar; auto-hides on the login page.
 
-Login page: Simple login flow for user authentication
-
-🛠️ Tech Stack
+🛠️ Stack & Technologies
 React 19+
 
-react-router-dom (routing)
+react-router-dom — Routing
 
-@hello-pangea/dnd (modern drag and drop for Kanban)
+@hello-pangea/dnd — Kanban drag-and-drop
 
-CSS-in-JS (inline styles for digital/dark theme)
+localStorage — Persistent client data (refresh-safe)
 
-localStorage for storing client data locally
+CSS-in-JS — Fully dark UI, digital accents
 
 ⚡ Quick Start
-Install dependencies:
-
-text
+bash
+git clone https://github.com/your-username/credit-score-frontend.git
+cd credit-score-frontend
 npm install
-Start the project:
-
-text
 npm run start
-The app will open at http://localhost:3000
-
-Usage highlights:
-
-Add new clients in the “Kanban” page
-
-Manage statuses via drag & drop
-
-Edit, delete, and view client details
-
-Navigation menu is visible on all pages except login
-
-Log in to access full functionality
-
+# Open http://localhost:3000 in your browser
 📁 Data Storage
-Client data is loaded from src/data/clients.json on first run.
+Initial clients loaded from src/data/clients.json.
 
-All changes are automatically saved in localStorage—your clients and Kanban data persist across refreshes.
+All changes saved automatically to browser localStorage.
 
-To reset clients, manually clear your browser’s localStorage.
+Local data is persistent; reset by clearing browser localStorage.
 
-🖥️ Project Structure
+📚 App Structure
 text
 src/
   pages/
@@ -70,30 +52,32 @@ src/
     ProfilePage.jsx
     KanbanClientsPage.jsx
     LoginPage.jsx
-    CreditFormPage.jsx
+    ...
   components/
     MenuNav.jsx
   data/
     clients.json
 App.jsx
-🔒 Authentication
-Login page (/login) provides simple email/password authentication.
+🧑‍💼 Usage Tips
+Add a Client: Click ‘+ Add Client’ on Kanban Board, fill out the modal form.
 
-After login, you have access to main app functions and navigation menu.
+Edit/Delete: Click any client card to open editing modal, update details or delete.
 
-“Logout” button on ProfilePage sends you to the login page.
+Drag & Drop: Move cards between statuses intuitively.
 
-💡 Development & Expansion
-Add components for application history, reports, admin dashboard, stats, etc.
+Authentication: Log in on /login; “Logout” is on ProfilePage.
 
-Easily add any new page to the router (App.jsx) and menu (MenuNav).
+Navigation Menu: Shows on all pages except login for a distraction-free auth flow.
 
-Replace localStorage/JSON with API calls to your backend for full-stack integration.
+🚀 Extending
+Add pages for history, reports, admin dashboard, stats, and more!
+
+Plug in API endpoints for production backends (swap out localStorage/JSON).
+
+Fully customizable for your business case.
 
 📝 License
 MIT
 
-For questions/feature requests, contact the repository owner.
-Everything is extendable, customizable, and ready for your next big use case!
-
-Enjoy building with Credit Score Frontend!
+For issues, ideas, or contributions:
+Open a pull request, or contact the repo owner directly!
