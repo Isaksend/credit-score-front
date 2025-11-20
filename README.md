@@ -1,16 +1,99 @@
-# React + Vite
+Credit Score Frontend
+Credit Score Frontend is a user-friendly React application for managing clients in a credit scoring system, visualizing their statuses, applications, and profiles.
+The interface features a digital/dark theme, kanban board with drag & drop, persistent data storage, and authentication support.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Core Features
+CreditForm: Fill-out form to send client parameters for scoring, with live results display.
 
-Currently, two official plugins are available:
+Profile: User profile page with Logout functionality and personal info.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Clients Kanban board: Visual management of applicants by status (New, In Review, Approved, Rejected).
 
-## React Compiler
+Add new clients (modal form)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Drag & drop between statuses
 
-## Expanding the ESLint configuration
+Persistent storage in JSON + localStorage (clients never disappear after page refresh!)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+View, edit, and delete clients directly from the board
+
+Navigation menu: Fixed and adaptive (hidden on the login page)
+
+Login page: Simple login flow for user authentication
+
+🛠️ Tech Stack
+React 19+
+
+react-router-dom (routing)
+
+@hello-pangea/dnd (modern drag and drop for Kanban)
+
+CSS-in-JS (inline styles for digital/dark theme)
+
+localStorage for storing client data locally
+
+⚡ Quick Start
+Install dependencies:
+
+text
+npm install
+Start the project:
+
+text
+npm run start
+The app will open at http://localhost:3000
+
+Usage highlights:
+
+Add new clients in the “Kanban” page
+
+Manage statuses via drag & drop
+
+Edit, delete, and view client details
+
+Navigation menu is visible on all pages except login
+
+Log in to access full functionality
+
+📁 Data Storage
+Client data is loaded from src/data/clients.json on first run.
+
+All changes are automatically saved in localStorage—your clients and Kanban data persist across refreshes.
+
+To reset clients, manually clear your browser’s localStorage.
+
+🖥️ Project Structure
+text
+src/
+  pages/
+    CreditFormPage.jsx
+    ProfilePage.jsx
+    KanbanClientsPage.jsx
+    LoginPage.jsx
+    CreditFormPage.jsx
+  components/
+    MenuNav.jsx
+  data/
+    clients.json
+App.jsx
+🔒 Authentication
+Login page (/login) provides simple email/password authentication.
+
+After login, you have access to main app functions and navigation menu.
+
+“Logout” button on ProfilePage sends you to the login page.
+
+💡 Development & Expansion
+Add components for application history, reports, admin dashboard, stats, etc.
+
+Easily add any new page to the router (App.jsx) and menu (MenuNav).
+
+Replace localStorage/JSON with API calls to your backend for full-stack integration.
+
+📝 License
+MIT
+
+For questions/feature requests, contact the repository owner.
+Everything is extendable, customizable, and ready for your next big use case!
+
+Enjoy building with Credit Score Frontend!
