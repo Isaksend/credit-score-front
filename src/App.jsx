@@ -23,7 +23,7 @@ function AppLayout() {
                     <Route path="/form" element={<CreditFormPage />} />
                     <Route path="/dashboard" element={<DashboardPage />} />
                     <Route path="/profile" element={<ProfilePage />} />
-                    <Route path="/login" element={<LoginPage />} />
+                    <Route path="/" element={<LoginPage />} />
                 </Routes>
             </div>
         </>
